@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <title>Approval 1 - Car Loan Application</title>
+    <meta
+      name="description"
+      content="Car Loan Application, Get Approved
+    Regardless of Your Credit Score; Bad Credit Car Loan or No Credit Car Loan
+    Applicants Accepted."
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container navbar-inner">
+        <div class="logo">
+          <a href="#hero">
+            <img src="img/logo.png" alt="APPROVAL1" />
+          </a>
+        </div>
+        <ul class="links">
+          <li><a href="#about">About us</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+          <li><a href="#contact">Contact us</a></li>
+          <li>
+            <a href="apply.html" class="btn-apply-dark">Apply now</a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="showMenu()">
+          <i data-feather="menu"></i>
+        </div>
+      </div>
+    </nav>
+    <header id="hero">
+      <div class="container hero-inner">
+        <div class="heading animated fadeIn">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p class="lead py-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vitae
+            blanditiis quidem, quibusdam enim doloribus.
+          </p>
+          <a href="apply.html" class="btn-apply-light">Get a car now</a>
+        </div>
+        <div class="car animated fadeIn">
+          <img src="img/hero-car.svg" alt="car" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="py-2">
+        <div class="container about-inner">
+          <div class="centered py-3">
+            <h1 class="title-dark">About us</h1>
+          </div>
+          <div class="about-grid">
+            <p class="about-left lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              dolorum vitae debitis quo at saepe sed beatae consequatur fuga,
+              rerum mollitia error assumenda voluptatibus eaque quia possimus
+              veritatis tempore culpa dolore, dignissimos omnis rem sunt,
+              voluptates sint! Architecto reiciendis, ea iure dolor, numquam
+              esse ipsa facilis cumque praesentium eaque pariatur.
+            </p>
+            <img src="img/about.svg" alt="About us" class="py-1" />
+          </div>
+        </div>
+      </section>
+      <div id="hr">
+        <hr class="container" />
+      </div>
+      <section id="inventory" class="py-2">
+        <div class="container inventory-inner">
+          <div class="centered py-3">
+            <h1 class="title-dark">Our inventory</h1>
+          </div>
+          <p class="lead centered">
+            We offer huge variety of vehicles which you can enjoy
+          </p>
+          <div class="col-4 py-3">
+            <div class="box">
+              <div class="vehicle">
+                <img src="img/car.svg" alt="" />
+              </div>
+              <div class="description">
+                <h1>Cars</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  nam! Quis distinctio nam ipsum animi! Quam eveniet autem sunt
+                  accusamus.
+                </p>
+                <a href="apply.html" class="btn-apply-dark my-1">Apply now</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="vehicle">
+                <img src="img/minivan.svg" alt="" />
+              </div>
+              <div class="description">
+                <h1>Minivans</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  nam! Quis distinctio nam ipsum animi! Quam eveniet autem sunt
+                  accusamus.
+                </p>
+                <a href="apply.html" class="btn-apply-dark my-1">Apply now</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="vehicle">
+                <img src="img/truck.svg" alt="" />
+              </div>
+              <div class="description">
+                <h1>Trucks</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  nam! Quis distinctio nam ipsum animi! Quam eveniet autem sunt
+                  accusamus.
+                </p>
+                <a href="apply.html" class="btn-apply-dark my-1">Apply now</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="vehicle">
+                <img src="img/suv.svg" alt="" />
+              </div>
+              <div class="description">
+                <h1>SUVs</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  nam! Quis distinctio nam ipsum animi! Quam eveniet autem sunt
+                  accusamus.
+                </p>
+                <a href="apply.html" class="btn-apply-dark my-1">Apply now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container contact-inner">
+          <div class="centered py-2">
+            <h1 class="title-light">Contact us</h1>
+          </div>
+          <p class="lead centered">
+            Got any questions? Just want to say hello? Feel free to contact us!
+          </p>
+          <div class="col-2">
+            <div class="col-left">
+              <form action="mail.php" method="POST" class="py-2">
+                <div class="contact-email">
+                  <label for="email">Email</label>
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="email-input"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="contact-name">
+                  <label for="name">Name</label>
+                  <input
+                    required
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="name-input"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="contact-text">
+                  <label for="message">Message</label>
+                  <textarea
+                    required
+                    name="message"
+                    id="message"
+                    class="message-input"
+                    placeholder="Enter a message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-apply-light">
+                  Send a message
+                </button>
+              </form>
+            </div>
+            <div class="col-right py-2">
+              <h2>Our informations</h2>
+              <p>You can also reach out using:</p>
+              <ul class="contact-data py-1">
+                <li>
+                  <p>
+                    <i data-feather="phone"></i>
+                    <span>
+                      Phone
+                    </span>
+                    <strong>323-776-2888</strong>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i data-feather="mail"></i>
+                    <span>
+                      E-Mail
+                    </span>
+                    <strong>hello@approval1.com</strong>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i data-feather="map-pin"></i>
+                    <span>
+                      Address
+                    </span>
+                    <strong>Lorem ipsum dolor sit amet.</strong>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <div class="logo">
+          <a href="#hero" aria-label="Get back to the top of the page">
+            <img src="img/logo.png" alt="APPROVAL1" />
+          </a>
+        </div>
+        <a href="#hero" aria-label="Get back to the top of the page">
+          <i data-feather="arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+  <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-apply-dark, .btn-apply-light {
+  padding: 0.75rem;
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 20rem; }
+
+.title-dark, .title-light {
+  font-size: 2rem;
+  display: inline-block; }
+
+.btn-apply-dark {
+  border: 2px solid #1f333b;
+  color: #1f333b; }
+
+.btn-apply-light {
+  border: 2px solid #effaff;
+  color: #effaff; }
+
+.py-1 {
+  padding: 1rem 0rem; }
+
+.py-2 {
+  padding: 2rem 0rem; }
+
+.py-3 {
+  padding: 3rem 0rem; }
+
+.my-1 {
+  margin: 1rem 0rem; }
+
+.my-2 {
+  margin: 2rem 0rem; }
+
+.my-3 {
+  margin: 3rem 0rem; }
+
+.centered {
+  text-align: center; }
+
+.title-dark {
+  border-bottom: 3px solid #24527e; }
+
+.title-light {
+  border-bottom: 3px solid #effaff; }
+
+.lead {
+  font-size: 1.1rem; }
+
+#hr {
+  background: #f3eff5;
+  color: #1f333b; }
+
+.page .page-nav-one, .page .page-nav-two {
+  display: flex;
+  width: 45vw; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: #24527e;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.logo {
+  width: 175px;
+  height: auto; }
+
+.page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .page .page-container {
+    height: 70vh;
+    width: 50vw;
+    padding: 2rem;
+    background: #effaff;
+    color: #1f333b;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .page .page-container .application-form {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      width: 100%; }
+      .page .page-container .application-form-input {
+        border-radius: 3px;
+        box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+        padding: 0.25rem 1rem;
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        transition: 0.5s;
+        outline: none;
+        border: 2px solid #effaff; }
+        .page .page-container .application-form-input:focus {
+          border: 2px solid #24527e; }
+      .page .page-container .application-form label {
+        font-size: 1.1rem; }
+  .page .page-nav-one {
+    justify-content: center; }
+  .page .page-nav-two {
+    justify-content: space-between; }
+
+@media screen and (min-height: 868px) {
+  #hero {
+    height: 50vh; }
+  #contact {
+    height: 45vh; }
+  .page .page-container {
+    height: 50vh;
+    width: 70vw; } }
+
+@media screen and (max-width: 1080px) {
+  #inventory .inventory-inner .col-4 {
+    grid-template-columns: repeat(2, 1fr); }
+    #inventory .inventory-inner .col-4 .box {
+      max-width: 50vw; } }
+
+@media screen and (max-width: 800px) {
+  #navbar .navbar-inner {
+    flex-wrap: wrap; }
+    #navbar .navbar-inner .hamburger {
+      padding: 1.5rem 0;
+      display: block; }
+      #navbar .navbar-inner .hamburger .feather {
+        width: 2.5rem;
+        height: 2.5rem; }
+    #navbar .navbar-inner .links {
+      display: none; }
+    #navbar .navbar-inner .responsive {
+      flex-basis: 100%;
+      display: flex;
+      order: 2;
+      flex-direction: column;
+      text-align: center; }
+  .page .page-nav-one, .page .page-nav-two {
+    width: 90vw; }
+  .page .page-container {
+    width: 100vw; } }
+
+@media screen and (max-width: 850px) {
+  #contact {
+    height: auto; }
+    #contact .contact-inner .col-2 {
+      grid-template-columns: 1fr; }
+      #contact .contact-inner .col-2 .col-left form {
+        grid-template-areas: "email" "name" "message"; }
+      #contact .contact-inner .col-2 .col-right {
+        align-items: center; } }
+
+@media screen and (max-width: 700px) {
+  #hero {
+    height: auto; }
+    #hero .hero-inner {
+      padding-top: 3rem;
+      grid-template-columns: 1fr; }
+      #hero .hero-inner .car {
+        padding: 2rem 0; }
+  #about .about-inner .about-grid {
+    grid-template-columns: 1fr; }
+    #about .about-inner .about-grid .about-left {
+      padding-right: 0rem; }
+  #inventory .inventory-inner .col-4 {
+    grid-template-columns: 1fr; }
+    #inventory .inventory-inner .col-4 .box {
+      max-width: 100vw; } }

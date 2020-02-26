@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import "config";
+@import "utilities";
+
+%page-nav-shared {
+  display: flex;
+  width: 45vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color2;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 175px;
+  height: auto;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .page-container {
+    height: 70vh;
+    width: 50vw;
+    padding: 2rem;
+    background: $text-light;
+    color: $text-dark;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .application-form {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      width: 100%;
+
+      &-input {
+        border-radius: 3px;
+        box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+        padding: 0.25rem 1rem;
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        transition: 0.5s;
+        outline: none;
+        border: 2px solid $text-light;
+
+        &:focus {
+          border: 2px solid $color2;
+        }
+      }
+
+      label {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .page-nav-one {
+    @extend %page-nav-shared;
+    justify-content: center;
+  }
+
+  .page-nav-two {
+    @extend %page-nav-shared;
+    justify-content: space-between;
+  }
+}
+
+@import "media";
