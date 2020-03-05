@@ -6,8 +6,6 @@ Free theme created by Splawr, which can be used by everyone. Made especially for
 
 ##### [Online](https://splawr.com/files/preview/approval1)
 
----
-
 ##### Local:
 
 After downloading a theme from Splawr you can run it by opening index.html in your favourite browser.
