@@ -185,8 +185,10 @@ img {
           max-width: 100px;
           height: auto; }
       #inventory .inventory-inner .col-4 .box .description {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 12rem 1fr;
+        row-gap: 1rem;
+        justify-items: center;
         align-items: center;
         padding: 1rem; }
 
@@ -265,7 +267,9 @@ footer {
   #inventory .inventory-inner .col-4 {
     grid-template-columns: repeat(2, 1fr); }
     #inventory .inventory-inner .col-4 .box {
-      max-width: 50vw; } }
+      max-width: 50vw; }
+      #inventory .inventory-inner .col-4 .box .description {
+        grid-template-rows: 10rem 1fr; } }
 
 @media screen and (max-width: 800px) {
   #navbar .navbar-inner {
@@ -312,4 +316,6 @@ footer {
   #inventory .inventory-inner .col-4 {
     grid-template-columns: 1fr; }
     #inventory .inventory-inner .col-4 .box {
-      max-width: 100vw; } }
+      max-width: 100vw; }
+      #inventory .inventory-inner .col-4 .box .description {
+        grid-template-rows: 2fr 1fr; } }

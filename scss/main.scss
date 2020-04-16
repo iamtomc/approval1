@@ -164,8 +164,10 @@ img {
         }
 
         .description {
-          display: flex;
-          flex-direction: column;
+          display: grid;
+          grid-template-rows: 12rem 1fr;
+          row-gap: 1rem;
+          justify-items: center;
           align-items: center;
           padding: 1rem;
         }
