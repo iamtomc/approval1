@@ -165,10 +165,9 @@ img {
 
         .description {
           display: grid;
-          grid-template-rows: 12rem 1fr;
+          grid-template-rows: fit-content(4rem) 11rem 1fr;
           row-gap: 1rem;
           justify-items: center;
-          align-items: center;
           padding: 1rem;
         }
       }
