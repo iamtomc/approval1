@@ -4,7 +4,7 @@ Free web template created, which can be used by everyone. Made especially for st
 
 #### Live Preview
 
-https://splawr.com/webtemplates/60edf21878aacc1768aef6ed
+[Online](https://splawr.com/webtemplates/60edf21878aacc1768aef6ed)
 
 #### Basic usage
 
@@ -24,3 +24,7 @@ npm run sass
 ```
 
 After you edit and save SCSS file Node will automatically render and save CSS file into /dist/css folder.
+
+### Questions/Problems/Bugs
+
+Feel free to contact us using contact form which is available here: https://splawr.com/contact
